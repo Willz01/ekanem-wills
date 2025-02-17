@@ -25,14 +25,14 @@ function NavBar() {
           <Link to="/experience" className="[&.active]:font-bold mr-2">
             Experience
           </Link>
-          <a
+          {/*   <a
             href="/assets/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="[&.active]:font-bold"
           >
             Resume
-          </a>
+          </a> */}
 
         </div>
         <div className='mr-2'>

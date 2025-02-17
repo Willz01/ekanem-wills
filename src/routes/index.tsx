@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { Github, Linkedin, MailOpen } from 'lucide-react'
+import { FileUser, Github, Linkedin, MailOpen } from 'lucide-react'
 import { useEffect } from 'react'
 
 export const Route = createFileRoute('/')({
@@ -34,6 +34,7 @@ function Home() {
         <a href="https://www.linkedin.com/in/ekanem-wills-17we/" target='_blank'><Linkedin /></a>
         <MailOpen onClick={handleMailClick} />
         <a href="https://github.com/Willz01" target='_blank'><Github /></a>
+        <a href="/assets/resume.pdf" target='_blank'><FileUser /></a>
       </div>
     </div>
   );
