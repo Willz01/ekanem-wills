@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 export const Route = createFileRoute("/education")({
   component: RouteComponent,
@@ -20,14 +21,14 @@ function RouteComponent() {
           <p className="text-l font-semibold text-gray-500 mt-2 mb-3">
             Bachelors of Science (180 credits) with a major in Computer Science
           </p>
-          <p className="text-md text-muted-foreground mt-1 mb-2">
+          <p className="text-sm text-muted-foreground">
+            KRISTIANSTAD UNIVERSITY, SWEDEN
+          </p>
+          <p className="text-sm text-muted-foreground mt-1 mb-2">
             {" "}
             <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
               September 2019 - May 2022
             </code>
-          </p>
-          <p className="text-md text-muted-foreground">
-            KRISTIANSTAD UNIVERSITY, SWEDEN
           </p>
         </div>
 
@@ -38,19 +39,20 @@ function RouteComponent() {
           <p className="text-l font-semibold text-gray-500 mt-2 mb-3">
             Masters of Science (120 credits) with a major in Computer Science
           </p>
-          <p className="text-md text-muted-foreground mt-1 mb-2">
+          <p className="text-sm text-muted-foreground">
+            CHALMERS UNIVERSITY, SWEDEN
+          </p>
+          <p className="text-sm text-muted-foreground mt-1 mb-2">
             {" "}
             <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
               Sept 2025 - May 2027
             </code>
           </p>
-          <p className="text-md text-muted-foreground">
-            CHALMERS UNIVERSITY, SWEDEN
-          </p>
           <div className="mt-5 text-md text-muted-foreground leading-relaxed">
             <p className="font-semibold text-grey-800"></p>
           </div>
         </div>
+        <hr />
         <div className="max-w-lg mt-5">
           <p className="text-l font-semibold text-blue-800 mt-2 mb-3">
             <a

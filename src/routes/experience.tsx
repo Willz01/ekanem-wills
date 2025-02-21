@@ -39,7 +39,7 @@ function RouteComponent() {
               September 2022 – July 2023
             </code>
           </p>
-          <ul className="list-disc pl-5 text-gray-500 mt-2 font-semibold text-sm">
+          {/*   <ul className="list-disc pl-5 text-gray-500 mt-2 font-semibold text-sm">
             <li>
               Worked on deploying an internal engineering standards portal using
               Jekyll and Azure.
@@ -49,7 +49,7 @@ function RouteComponent() {
               Email Integration System using Bloomreach, Kafka, Java, Spring
               Boot, Jinja3, and SFMC to trigger customer order-related emails.
             </li>
-          </ul>
+          </ul> */}
         </div>
 
         <div className="mt-6 ml-4">
@@ -64,7 +64,7 @@ function RouteComponent() {
               September 2023 – August 2024
             </code>
           </p>
-          <ul className="list-disc pl-5 text-gray-500 mt-2 font-semibold text-sm">
+          {/*  <ul className="list-disc pl-5 text-gray-500 mt-2 font-semibold text-sm">
             <li>
               Contributing charity work for CodeAid supported company Elephant
               Care Relief Foundation (ECRF), a wildlife care foundation based in
@@ -75,7 +75,7 @@ function RouteComponent() {
               and improved web solution for the foundation using vercel and
               Builder.io
             </li>
-          </ul>
+          </ul> */}
         </div>
 
         <div className="mt-6 ml-4">
@@ -90,7 +90,7 @@ function RouteComponent() {
               Febraury 2024 – July 2024
             </code>
           </p>
-          <ul className="list-disc pl-5 text-gray-500 mt-2 font-semibold text-sm">
+          {/*  <ul className="list-disc pl-5 text-gray-500 mt-2 font-semibold text-sm">
             <li>
               Contributing to the design and implementation of RESTful APIs,
               ensuring efficiency and scalability.
@@ -99,7 +99,7 @@ function RouteComponent() {
               Working with NCP microservices using Azure functions, queues,
               blob, APIM in ASP.NET.
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </div>
