@@ -1,8 +1,9 @@
-import { Badge } from "@/components/ui/badge";
 import { getColor } from "@/lib/common";
 import { createFileRoute } from "@tanstack/react-router";
-import { FileUser, Github, Linkedin, MailOpen } from "lucide-react";
+import { FileTextIcon, Github, Linkedin, MailOpen } from "lucide-react";
 import { useEffect } from "react";
+import "../index.css";
+import { Skills } from "@/components/skills";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -22,11 +23,13 @@ function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
-      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-center max-w-xl">
+    <div className="flex flex-col justify-center items-center h-screen bg-[url('/assets/rv.jpeg')] bg-cover bg-center bg-no-repeat">
+      <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl text-center max-w-xl">
         Hey there, my name is{" "}
-        <p className={getColor().toString()}>Wills Ekanem</p> and I am a Backend
-        Engineer.
+        <p className={getColor().toString()} id="wills-name-text">
+          Wills Ekanem
+        </p>{" "}
+        and I am a Backend Engineer.
       </h1>
 
       <div className="flex justify-center items-center space-x-6 mt-4">
@@ -38,21 +41,11 @@ function Home() {
           <Github />
         </a>
         <a href="/assets/resume.pdf" target="_blank">
-          <FileUser />
+          <FileTextIcon />
         </a>
       </div>
 
-      <div className="absolute bottom-4 w-full flex flex-wrap justify-center gap-2 px-4">
-        <Badge>Microservices</Badge>
-        <Badge>.NET</Badge>
-        <Badge>Azure</Badge>
-        <Badge>Kafka</Badge>
-        <Badge>Java</Badge>
-        <Badge>Python</Badge>
-        <Badge>Bloomreach</Badge>
-        <Badge>Node/bun</Badge>
-        <Badge>JavaScript</Badge>
-      </div>
+      <Skills />
     </div>
   );
 }

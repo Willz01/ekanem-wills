@@ -1,3 +1,4 @@
+import { Skills } from "@/components/skills";
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 
@@ -8,10 +9,14 @@ export const Route = createFileRoute("/experience")({
 function RouteComponent() {
   useEffect(() => {
     document.title = "Experience";
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "scroll";
+    };
   }, []);
 
   return (
-    <div className="flex justify-start items-start h-auto p-8 mb-3">
+    <div className="flex justify-start items-start h-screen p-8 mb-3">
       <div className="max-w-3xl">
         {/*  <h2 className="text-4xl font-bold tracking-tight sm:text-5xl text-teal-600">Work Experience</h2> */}
 
@@ -28,10 +33,11 @@ function RouteComponent() {
         </div>
 
         <div className="mt-6 ml-4">
-          <h3 className="text-1xl font-semibold text-gray-400">
+          <hr />
+          <h3 className="text-1xl font-semibold text-gray-400 mt-2">
             [<b>PANDORA</b>] - JUNIOR SOFTWARE ENGINEER
           </h3>
-          <p className="text-md font-semibold text-gray-600">
+          <p className="text-sm font-semibold text-gray-600">
             Bloomreach Engineer{" "}
           </p>
           <p className="text-md text-muted-foreground mt-1 mb-2">
@@ -50,13 +56,15 @@ function RouteComponent() {
               Boot, Jinja3, and SFMC to trigger customer order-related emails.
             </li>
           </ul> */}
+          <hr />
         </div>
 
         <div className="mt-6 ml-4">
-          <h3 className="text-1xl font-semibold text-gray-400">
+          <hr />
+          <h3 className="text-1xl font-semibold text-gray-400 mt-2">
             [<b>ECRF</b> CODEAID] - ASSOCIATE SOFTWARE ENGINEER
           </h3>
-          <p className="text-md font-semibold text-gray-600">
+          <p className="text-sm font-semibold text-gray-600">
             Software Engineer
           </p>
           <p className="text-md text-muted-foreground mt-1 mb-2">
@@ -76,13 +84,15 @@ function RouteComponent() {
               Builder.io
             </li>
           </ul> */}
+          <hr />
         </div>
 
         <div className="mt-6 ml-4">
-          <h3 className="text-1xl font-semibold text-gray-400">
+          <hr />
+          <h3 className="text-1xl font-semibold text-gray-400 mt-2">
             [<b>NCP</b> NATIONAL CAR PARKS] - ASSOCIATE SOFTWARE ENGINEER
           </h3>
-          <p className="text-md font-semibold text-gray-600">
+          <p className="text-sm font-semibold text-gray-600">
             Backend Engineer
           </p>
           <p className="text-md text-muted-foreground mt-1 mb-2">
@@ -100,8 +110,11 @@ function RouteComponent() {
               blob, APIM in ASP.NET.
             </li>
           </ul> */}
+          <hr />
         </div>
       </div>
+
+      <Skills />
     </div>
   );
 }

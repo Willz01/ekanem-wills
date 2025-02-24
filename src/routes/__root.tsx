@@ -1,7 +1,6 @@
 import { ModeToggle } from "@/components/mode-toggle";
 import { ThemeProvider } from "@/components/theme-provider";
 import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
-import { TanStackRouterDevtools } from "@tanstack/router-devtools";
 import { Framer } from "lucide-react";
 import { useEffect } from "react";
 
@@ -19,11 +18,11 @@ function NavBar() {
           </Link>
           <Link
             to="/about"
-            className="[&.active]:font-bold mr-2 ml-8 text-base"
+            className="[&.active]:font-bold mr-1 ml-8 text-base"
           >
             About
           </Link>
-          <Link to="/education" className="[&.active]:font-bold mr-2 text-base">
+          <Link to="/education" className="[&.active]:font-bold mr-1 text-base">
             Education
           </Link>
           <Link
