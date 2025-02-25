@@ -13,6 +13,7 @@ function Skills() {
         "Bloomreach",
         "Node/bun",
         "JavaScript",
+        "Database Manangement",
       ].map((tech) => (
         <Badge key={tech}>{tech}</Badge>
       ))}

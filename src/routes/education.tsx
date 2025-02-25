@@ -18,10 +18,10 @@ function RouteComponent() {
   return (
     <div className="flex flex-col justify-start items-start p-8 mb-3 h-screen">
       <div className="max-w-lg">
-        <h2 className="text-lg font-bold tracking-tight sm:text-xl text-teal-600">
-          Software Development
+        <h2 className="text-md font-semibold tracking-tight sm:text-md text-teal-600">
+          SOFTWARE DEVELOPMENT
         </h2>
-        <p className="text-l font-semibold text-gray-500 mt-2 mb-3">
+        <p className="text-l font-lightbold text-gray-500 mt-2 mb-3">
           Bachelors of Science (180 credits) with a major in Computer Science
         </p>
         <p className="text-sm text-muted-foreground">
@@ -35,10 +35,10 @@ function RouteComponent() {
         </p>
       </div>
       <div className="max-w-lg mt-4">
-        <h2 className="text-lg font-bold tracking-tight sm:text-xl text-teal-600">
-          Computer Systems & Networking, Cyber-Security
+        <h2 className="text-md font-semibold tracking-tight sm:text-md text-teal-600">
+          COMPUTER SYSTEMS , NETWORKING & CYBER-SECURITY
         </h2>
-        <p className="text-l font-semibold text-gray-500 mt-2 mb-3">
+        <p className="text-l font-lightbold text-gray-500 mt-2 mb-3">
           Masters of Science (120 credits) with a major in Computer Science
         </p>
         <p className="text-sm text-muted-foreground">

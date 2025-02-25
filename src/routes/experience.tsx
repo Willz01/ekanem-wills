@@ -21,7 +21,7 @@ function RouteComponent() {
         {/*  <h2 className="text-4xl font-bold tracking-tight sm:text-5xl text-teal-600">Work Experience</h2> */}
 
         <div className="mt-1">
-          <h3 className="text-md font-semibold text-gray-500">
+          <h3 className="text-md font-semibold text-teal-600">
             PUBLICIS SAPIENT AB
           </h3>
           <p className="text-md text-muted-foreground mt-1 mb-2">
