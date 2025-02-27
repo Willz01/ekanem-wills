@@ -10,7 +10,7 @@
         "lint": "eslint .",
         "preview": "vite preview",
         "predeploy": "npm run build",
-        "deploy": "gh-page -d build"
+        "deploy": "main -d build"
     },
     "dependencies": {
         "@radix-ui/react-dialog": "^1.1.6",
