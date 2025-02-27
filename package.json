@@ -3,6 +3,7 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
+    "homepage": "https://Willz01.github.io/ekanem-wills",
     "scripts": {
         "dev": "bunx --bun vite",
         "build": "bunx --bun vite build",
