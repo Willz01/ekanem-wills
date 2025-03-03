@@ -7,7 +7,7 @@ FROM oven/bun:${BUN_VERSION}-slim AS base
 LABEL fly_launch_runtime="Bun"
 
 # Bun app lives here
-WORKDIR /app
+WORKDIR /src
 
 # Set production environment
 ENV NODE_ENV="production"
@@ -39,8 +39,8 @@ RUN rm -rf node_modules && \
 FROM base
 
 # Copy built application
-COPY --from=build /app /app
+COPY --from=build /src /app
 
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000
-CMD [ "bun", "index.ts" ]
+CMD [ "bun", "build/assets/index.ts" ]
