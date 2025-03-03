@@ -16,9 +16,9 @@ function RouteComponent() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-start h-screen p-8 mb-3 bg-[url('/assets/33.jpg')] bg-cover bg-center bg-no-repeat">
+    <div className="flex flex-col justify-start items-start h-screen p-8 mb-3 bg-[url('/assets/33.jpg')] bg-cover bg-center bg-no-repeat">
 
-      <div className="max-w-lg">
+      <div className="max-w-lg mt-6">
         <hr />
         <h2 className="text-md font-semibold tracking-tight sm:text-md text-teal-600 mt-2">
           SOFTWARE DEVELOPMENT
