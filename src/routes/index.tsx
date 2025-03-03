@@ -29,7 +29,7 @@ function Home() {
         <p className={getColor().toString()} id="wills-name-text">
           Wills Ekanem
         </p>{" "}
-        and I am a Backend Engineer!
+        and I am a Backend Engineer.
       </h1>
 
       <div className="flex justify-center items-center space-x-6 mt-4">
