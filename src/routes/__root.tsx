@@ -32,9 +32,11 @@ function NavBar() {
             Experience
           </Link>
         </div>
-        {/* <div className="mr-2">
-          <ModeToggle />
-        </div> */}
+        {
+          /* <div className="mr-2">
+            <ModeToggle />
+          </div> */
+        }
       </div>
     </>
   );
