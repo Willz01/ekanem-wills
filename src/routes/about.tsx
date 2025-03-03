@@ -19,7 +19,6 @@ function About() {
   return (
     <div
       className="flex flex-col justify-center items-center h-screen bg-[url('/assets/33.jpg')] bg-cover bg-center bg-no-repeat"
-    /* style={{ backgroundImage: "url(/assets/rv.jpeg)" }} */
     >
       <div >
         <div className="text-sm font-semibold lg:text-md text-center max-w-xl m-4 text-silver-600 mb-8 mt-0 ">
