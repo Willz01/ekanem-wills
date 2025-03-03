@@ -16,14 +16,14 @@ function RouteComponent() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center p-8 mb-3">
+    <div className="flex flex-col justify-center items-start h-screen p-8 mb-3 bg-[url('/assets/33.jpg')] bg-cover bg-center bg-no-repeat">
 
       <div className="max-w-lg">
         <hr />
         <h2 className="text-md font-semibold tracking-tight sm:text-md text-teal-600 mt-2">
           SOFTWARE DEVELOPMENT
         </h2>
-        <p className="text-l font-lightbold text-gray-500 mt-2 mb-3">
+        <p className="text-l font-lightbold text-gray-600 mt-2 mb-3">
           Bachelors of Science (180 credits) with a major in Computer Science
         </p>
         <p className="text-sm text-muted-foreground">

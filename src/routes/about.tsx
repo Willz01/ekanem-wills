@@ -18,11 +18,11 @@ function About() {
 
   return (
     <div
-      className="flex flex-col justify-center items-center m-4"
+      className="flex flex-col justify-center items-center h-screen bg-[url('/assets/33.jpg')] bg-cover bg-center bg-no-repeat"
     /* style={{ backgroundImage: "url(/assets/rv.jpeg)" }} */
     >
-      <div>
-        <div className="text-sm font-semibold lg:text-md text-center max-w-xl m-4 text-silver-600 mb-8 mt-8">
+      <div >
+        <div className="text-sm font-semibold lg:text-md text-center max-w-xl m-4 text-silver-600 mb-8 mt-0 ">
           {/* <p className="text-teal-300 text-sm ml-2 mt-4">Passionate and resourceful developer</p> */}
           <p>
             WITH 3 YEARS OF EXPERIENCE AS A SOFTWARE ENGINEER,

@@ -23,8 +23,8 @@ function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-[url('/assets/rv.jpeg')] bg-cover bg-center bg-no-repeat">
-      <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl text-center max-w-xl">
+    <div className="flex flex-col justify-center items-center h-screen bg-[url('/assets/33.jpg')] bg-cover bg-center bg-no-repeat">
+      <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl text-center max-w-xl m-3">
         Hey there, my name is{" "}
         <p className={getColor().toString()} id="wills-name-text">
           Wills Ekanem
