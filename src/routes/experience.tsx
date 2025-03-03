@@ -32,7 +32,7 @@ function RouteComponent() {
 
         <div className="mt-6 ml-4">
           <hr />
-          <h3 className="text-1xl font-semibold text-gray-400 mt-2">
+          <h3 className="text-1xl font-semibold text-gray-200 mt-2">
             [<b>PANDORA</b>] - JUNIOR SOFTWARE ENGINEER
           </h3>
           <p className="text-sm font-semibold text-gray-600">
@@ -59,7 +59,7 @@ function RouteComponent() {
 
         <div className="mt-6 ml-4">
           <hr />
-          <h3 className="text-1xl font-semibold text-gray-400 mt-2">
+          <h3 className="text-1xl font-semibold text-gray-200 mt-2">
             [<b>ECRF</b> CODEAID] - ASSOCIATE SOFTWARE ENGINEER
           </h3>
           <p className="text-sm font-semibold text-gray-600">
@@ -87,7 +87,7 @@ function RouteComponent() {
 
         <div className="mt-6 ml-4">
           <hr />
-          <h3 className="text-1xl font-semibold text-gray-400 mt-2">
+          <h3 className="text-1xl font-semibold text-gray-200 mt-2">
             [<b>NCP</b> NATIONAL CAR PARKS] - ASSOCIATE SOFTWARE ENGINEER
           </h3>
           <p className="text-sm font-semibold text-gray-600">

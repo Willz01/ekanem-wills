@@ -23,7 +23,7 @@ function RouteComponent() {
         <h2 className="text-md font-semibold tracking-tight sm:text-md text-teal-600 mt-2">
           SOFTWARE DEVELOPMENT
         </h2>
-        <p className="text-l font-lightbold text-gray-600 mt-2 mb-3">
+        <p className="text-l font-lightbold text-gray-200 mt-2 mb-3">
           Bachelors of Science (180 credits) with a major in Computer Science
         </p>
         <p className="text-sm text-muted-foreground">
@@ -43,7 +43,7 @@ function RouteComponent() {
         <h2 className="text-md font-semibold tracking-tight sm:text-md text-teal-600 mt-2">
           COMPUTER SYSTEMS , NETWORKING & CYBER-SECURITY
         </h2>
-        <p className="text-l font-lightbold text-gray-500 mt-2 mb-3">
+        <p className="text-l font-lightbold text-gray-200 mt-2 mb-3">
           Masters of Science (120 credits) with a major in Computer Science
         </p>
         <p className="text-sm text-muted-foreground">
