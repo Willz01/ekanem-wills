@@ -18,21 +18,45 @@ function About() {
 
   return (
     <div
-      className="flex flex-col justify-center items-center h-screen"
-      /* style={{ backgroundImage: "url(/assets/rv.jpeg)" }} */
+      className="flex flex-col justify-center items-center m-4"
+    /* style={{ backgroundImage: "url(/assets/rv.jpeg)" }} */
     >
       <div>
-        <p
-          className="scroll-m-20 text-1xl font-bold
-      lg:text-1xl text-center max-w-xl m-4 text-silver-600"
-        >
-          PASSIONATE AND RESOURCEFUL SOFTWARE ENGINEER WITH 3 YEARS OF
-          EXPERIENCE DESIGNING AND DEVELOPING SCALABLE, HIGH-PERFORMANCE
-          APPLICATIONS. I THRIVE IN DYNAMIC ENVIRONMENTS, CONSTANTLY LEARNING
-          AND ADAPTING TO EMERGING BACKEND TECHNOLOGIES. WITH A KEEN EYE FOR
-          EFFICIENCY AND ROBUST SYSTEM ARCHITECTURE, I ENJOY TACKLING COMPLEX
-          CHALLENGES THAT PUSH ME TO GROW
-        </p>
+        <div className="text-sm font-semibold lg:text-md text-center max-w-xl m-4 text-silver-600 mb-8 mt-8">
+          {/* <p className="text-teal-300 text-sm ml-2 mt-4">Passionate and resourceful developer</p> */}
+          <p>
+            WITH 3 YEARS OF EXPERIENCE AS A SOFTWARE ENGINEER,
+            I SPECIALIZE IN DESIGNING AND DEVELOPING SCALABLE,
+            HIGH-PERFORMANCE APPLICATIONS. MY PASSION LIES IN
+            CREATING EFFICIENT AND ROBUST SYSTEM ARCHITECTURES THAT NOT ONLY MEET BUT EXCEED EXPECTATIONS.
+
+          </p>
+        </div>
+
+        <div className="text-sm font-semibold lg:text-md text-center max-w-xl m-4 text-silver-600 mb-8">
+          {/* <p className="text-teal-300 text-sm ml-2">Constant learner and adapter</p> */}
+          <p >
+            I THRIVE IN DYNAMIC ENVIRONMENTS, CONSTANTLY
+            EVOLVING MY SKILLS TO STAY AHEAD IN THE FAST-PACED
+            WORLD OF EMERGING BACKEND TECHNOLOGIES. LEARNING AND
+            ADAPTING ARE AT THE CORE OF MY APPROACH, ENSURING THAT I CAN TACKLE ANY CHALLENGE THAT COMES MY WAY.
+          </p>
+
+        </div>
+
+
+        <div className="text-sm font-semibold lg:text-md text-center max-w-xl m-4 text-silver-600 mb-8">
+          {/* 
+        <div>
+          <p className="text-teal-300 text-sm ml-2">Efficient problem solver</p>
+        </div> */}
+
+          <p>
+            WITH A KEEN EYE FOR EFFICIENCY, I ENJOY TAKING ON COMPLEX CHALLENGES
+            THAT PUSH ME TO GROW BOTH PROFESSIONALLY AND PERSONALLY. MY COMMITMENT
+            TO EXCELLENCE DRIVES ME TO FIND INNOVATIVE SOLUTIONS THAT ELEVATE THE PERFORMANCE AND RELIABILITY OF EVERY PROJECT I UNDERTAKE.
+          </p>
+        </div>
       </div>
 
       <Skills />

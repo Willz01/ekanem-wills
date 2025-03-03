@@ -18,23 +18,23 @@ function NavBar() {
           </Link>
           <Link
             to="/about"
-            className="[&.active]:font-bold mr-1 ml-8 text-base"
+            className="[&.active]:font-bold text-base"
           >
             About
           </Link>
-          <Link to="/education" className="[&.active]:font-bold mr-1 text-base">
+          <Link to="/education" className="[&.active]:font-bold text-base">
             Education
           </Link>
           <Link
             to="/experience"
-            className="[&.active]:font-bold mr-2 text-base"
+            className="[&.active]:font-bold text-base"
           >
             Experience
           </Link>
         </div>
-        <div className="mr-2">
+        {/* <div className="mr-2">
           <ModeToggle />
-        </div>
+        </div> */}
       </div>
     </>
   );

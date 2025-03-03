@@ -16,9 +16,11 @@ function RouteComponent() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-start items-start p-8 mb-3 h-screen">
+    <div className="flex flex-col justify-center items-center p-8 mb-3">
+
       <div className="max-w-lg">
-        <h2 className="text-md font-semibold tracking-tight sm:text-md text-teal-600">
+        <hr />
+        <h2 className="text-md font-semibold tracking-tight sm:text-md text-teal-600 mt-2">
           SOFTWARE DEVELOPMENT
         </h2>
         <p className="text-l font-lightbold text-gray-500 mt-2 mb-3">
@@ -33,9 +35,12 @@ function RouteComponent() {
             September 2019 - May 2022
           </code>
         </p>
+        <hr />
       </div>
+
       <div className="max-w-lg mt-4">
-        <h2 className="text-md font-semibold tracking-tight sm:text-md text-teal-600">
+        <hr />
+        <h2 className="text-md font-semibold tracking-tight sm:text-md text-teal-600 mt-2">
           COMPUTER SYSTEMS , NETWORKING & CYBER-SECURITY
         </h2>
         <p className="text-l font-lightbold text-gray-500 mt-2 mb-3">
@@ -50,9 +55,7 @@ function RouteComponent() {
             Sept 2025 - May 2027
           </code>
         </p>
-        <div className="mt-5 text-md text-muted-foreground leading-relaxed">
-          <p className="font-semibold text-grey-800"></p>
-        </div>
+        <hr />
       </div>
 
       <div className="max-w-lg mt-5">

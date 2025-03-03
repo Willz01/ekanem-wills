@@ -7,13 +7,15 @@ function Skills() {
         "Microservices",
         ".NET",
         "Azure",
-        "Kafka",
+        "Messaging",
         "Java",
         "Python",
         "Bloomreach",
         "Node/bun",
         "JavaScript",
         "Database Manangement",
+        "SWE",
+        "Version Control"
       ].map((tech) => (
         <Badge key={tech}>{tech}</Badge>
       ))}

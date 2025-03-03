@@ -16,7 +16,7 @@ function RouteComponent() {
   }, []);
 
   return (
-    <div className="flex justify-start items-start h-screen p-8 mb-3">
+    <div className="flex flex-col justify-center items-center p-8 mb-3">
       <div className="max-w-3xl">
         {/*  <h2 className="text-4xl font-bold tracking-tight sm:text-5xl text-teal-600">Work Experience</h2> */}
 
