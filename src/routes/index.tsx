@@ -15,7 +15,7 @@ const handleMailClick = () => {
 
 function Home() {
   useEffect(() => {
-    document.title = "Index";
+    document.title = "Home";
     document.body.style.overflow = "hidden";
     return () => {
       document.body.style.overflow = "scroll";
