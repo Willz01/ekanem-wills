@@ -15,16 +15,19 @@ function RouteComponent() {
 
   return (
     <>
+      {/* Background with blur effect */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.95, y: 30, filter: "blur(8px)" }}
-        animate={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
-        exit={{ opacity: 0, scale: 0.95, y: -30 }}
-        transition={{ duration: 0.8, ease: "easeInOut" }}
-        className="relative flex flex-col justify-start items-center min-h-screen px-8 py-8 mb-8 bg-[url('/assets/33.jpg')] bg-cover bg-center bg-no-repeat"
-      >
+        initial={{ scale: 1, filter: "blur(8px)" }}
+        animate={{ scale: 1.05, filter: "blur(0px)" }}
+        transition={{ duration: 8, ease: "easeOut" }}
+        className="fixed inset-0 -z-10 bg-[url('/assets/33.jpg')] bg-cover bg-center bg-no-repeat"
+      />
+
+      {/* Main content with adjusted spacing and centered text */}
+      <div className="relative flex flex-col justify-start items-center min-h-screen px-8 py-20">
         <div className="max-w-3xl text-left">
           {/* Publicis Sapient Section */}
-          <div className="">
+          <div>
             <h3 className="text-md font-semibold text-teal-600">
               PUBLICIS SAPIENT AB
             </h3>
@@ -54,11 +57,6 @@ function RouteComponent() {
                 September 2022 – July 2023
               </code>
             </p>
-            {/*  <p className="text-gray-200">
-              Developed solutions for Pandora's transactional email system,
-              collaborating closely with the team on improving customer
-              engagement through automation.
-            </p> */}
             <hr />
           </div>
 
@@ -75,11 +73,6 @@ function RouteComponent() {
                 September 2023 – August 2024
               </code>
             </p>
-            {/*  <p className="text-gray-200">
-              Contributing to charity projects and improving web solutions for
-              the Elephant Care Relief Foundation (ECRF) through a more
-              intuitive and responsive web design.
-            </p> */}
             <hr />
           </div>
 
@@ -96,15 +89,10 @@ function RouteComponent() {
                 February 2024 – July 2024
               </code>
             </p>
-            {/*  <p className="text-gray-200">
-              Worked on optimizing backend systems, focusing on scalable
-              solutions for managing large amounts of data and enhancing the
-              overall infrastructure.
-            </p> */}
             <hr />
           </div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Call to Action for CV */}
       <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-10">

@@ -48,8 +48,7 @@ function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
         >
-          Specializing in microservices, cloud solutions, and backend
-          architecture and Networking.
+          Microservices || Cloud solutions || Networking.
         </motion.p>
 
         <motion.div

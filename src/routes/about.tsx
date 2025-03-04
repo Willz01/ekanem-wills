@@ -20,14 +20,14 @@ function About() {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, scale: 0.95, y: 30 }}
-        animate={{ opacity: 1, scale: 1, y: 0 }}
+        initial={{ opacity: 0, scale: 0.95, y: 30, filter: "blur(8px)" }}
+        animate={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
         exit={{ opacity: 0, scale: 0.95, y: -30 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="relative min-h-screen flex flex-col justify-center items-center p-8 bg-[url('/assets/33.jpg')] bg-cover bg-center bg-no-repeat"
+        className="relative min-h-screen flex flex-col justify-start items-center p-8 bg-[url('/assets/33.jpg')] bg-cover bg-center bg-no-repeat"
       >
         <motion.div
-          className="mt-8 flex flex-col items-center max-w-3xl w-full"
+          className="flex flex-col items-center max-w-3xl w-full"
           initial="hidden"
           animate="visible"
           variants={{
