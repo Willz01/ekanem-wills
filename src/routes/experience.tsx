@@ -34,9 +34,9 @@ function RouteComponent() {
               </code>
             </p>
             <p className="text-gray-200 mt-4">
-              Worked on enhancing and optimizing internal systems for a global
-              brand. Involved in key projects like integrating transactional
-              email systems using Bloomreach and Kafka.
+              Worked on enhancing and optimizing internal systems for global
+              brands. Involved in key projects like Email transaction systems,
+              large microservices, and cloud solutions.
             </p>
             <hr />
           </div>
@@ -54,11 +54,11 @@ function RouteComponent() {
                 September 2022 – July 2023
               </code>
             </p>
-            <p className="text-gray-200">
+            {/*  <p className="text-gray-200">
               Developed solutions for Pandora's transactional email system,
               collaborating closely with the team on improving customer
               engagement through automation.
-            </p>
+            </p> */}
             <hr />
           </div>
 
@@ -75,11 +75,11 @@ function RouteComponent() {
                 September 2023 – August 2024
               </code>
             </p>
-            <p className="text-gray-200">
+            {/*  <p className="text-gray-200">
               Contributing to charity projects and improving web solutions for
               the Elephant Care Relief Foundation (ECRF) through a more
               intuitive and responsive web design.
-            </p>
+            </p> */}
             <hr />
           </div>
 
@@ -96,11 +96,11 @@ function RouteComponent() {
                 February 2024 – July 2024
               </code>
             </p>
-            <p className="text-gray-200">
+            {/*  <p className="text-gray-200">
               Worked on optimizing backend systems, focusing on scalable
               solutions for managing large amounts of data and enhancing the
               overall infrastructure.
-            </p>
+            </p> */}
             <hr />
           </div>
         </div>
