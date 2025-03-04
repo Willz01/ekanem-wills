@@ -3,6 +3,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
 import { Framer } from "lucide-react";
 import { useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 export const Route = createRootRoute({
   component: Root,
@@ -16,27 +17,19 @@ function NavBar() {
           <Link to="/" className="[&.active]:font-bold mr-5">
             <Framer />
           </Link>
-          <Link
-            to="/about"
-            className="[&.active]:font-bold text-base"
-          >
+          <Link to="/about" className="[&.active]:font-bold text-base">
             About
           </Link>
           <Link to="/education" className="[&.active]:font-bold text-base">
             Education
           </Link>
-          <Link
-            to="/experience"
-            className="[&.active]:font-bold text-base"
-          >
+          <Link to="/experience" className="[&.active]:font-bold text-base">
             Experience
           </Link>
         </div>
-        {
-          /* <div className="mr-2">
+        {/* <div className="mr-2">
             <ModeToggle />
-          </div> */
-        }
+          </div> */}
       </div>
     </>
   );
@@ -49,14 +42,25 @@ function Root() {
 
   return (
     <>
-      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <NavBar />
-        <hr />
-        <div>
-          <Outlet />
-        </div>
-        {/*    <TanStackRouterDevtools /> */}
-      </ThemeProvider>
+      <AnimatePresence mode="sync">
+        <motion.div
+          key={location.pathname}
+          initial={{ opacity: 20, y: 40 }}
+          animate={{ opacity: 11, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.4, ease: "easeInOut" }}
+          className="min-h-screen" // optional, to make sure it fills the page
+        >
+          <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+            <NavBar />
+            <hr />
+            <div>
+              <Outlet />
+            </div>
+            {/*    <TanStackRouterDevtools /> */}
+          </ThemeProvider>
+        </motion.div>
+      </AnimatePresence>
     </>
   );
 }
