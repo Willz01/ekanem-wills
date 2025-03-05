@@ -1,10 +1,10 @@
 import { getColor } from "@/lib/common";
 import { createFileRoute } from "@tanstack/react-router";
-import { FileTextIcon, Github, Linkedin, MailOpen } from "lucide-react";
-import { useEffect } from "react";
+import { FileTextIcon, Framer, Github, Linkedin, MailOpen } from "lucide-react";
+import { useEffect, useState } from "react";
 import "../index.css";
 import { Skills } from "@/components/skills";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -14,7 +14,10 @@ const handleMailClick = () => {
   window.location.href = "mailto:ekanemwills1@gmail.com"; // Replace with your email address
 };
 
-function Home() {
+export default function Home() {
+  const [showLoader, setShowLoader] = useState(false);
+  const [progress, setProgress] = useState(0);
+
   useEffect(() => {
     document.title = "Home";
     document.body.style.overflow = "hidden";
@@ -23,6 +26,90 @@ function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    if (!sessionStorage.getItem("loaded")) {
+      setShowLoader(true);
+      sessionStorage.setItem("loaded", "true");
+    }
+  }, []);
+
+  useEffect(() => {
+    if (showLoader) {
+      const interval = setInterval(() => {
+        setProgress((prev) => {
+          const next = prev + 1;
+          if (next === 100) {
+            clearInterval(interval);
+            setTimeout(() => setShowLoader(false), 1000); // slight pause before remove
+          }
+          return next;
+        });
+      }, 30); // slower and smooth
+    }
+  }, [showLoader]);
+
+  return (
+    <>
+      <AnimatePresence>
+        {showLoader && (
+          <motion.div
+            initial={{ y: "100%" }}
+            animate={{ y: 0 }}
+            exit={{ y: "-100%" }}
+            transition={{ duration: 1.8, ease: "easeInOut" }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-neutral-950 text-white m-2"
+          >
+            {/* Framer Icon, Large and Centered */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1 }}
+              className="flex justify-center items-center text-red-400"
+            >
+              <Framer
+                size={200}
+                strokeWidth={1.5}
+                className="text-cyan-400 opacity-20"
+              />
+            </motion.div>
+            {/* Progress Bar Container */}
+            <div className="relative flex flex-col items-center justify-center">
+              {/* Percentage */}
+              <motion.div
+                key={progress}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                className="text-6xl font-bold z-10"
+              >
+                {progress}%
+              </motion.div>
+
+              {/* Progress Bar */}
+              <div className="w-full max-w-md mt-6 h-2 bg-neutral-800 rounded-full overflow-hidden z-10">
+                <motion.div
+                  initial={{ width: "0%" }}
+                  animate={{ width: `${progress}%` }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                  className="h-full bg-teal-500"
+                />
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Main content */}
+      <main
+        className={`transition-opacity duration-700 ${showLoader ? "opacity-0" : "opacity-100"}`}
+      >
+        <MainIndexContent />
+      </main>
+    </>
+  );
+}
+
+function MainIndexContent() {
   return (
     <>
       <div className="relative flex flex-col justify-center items-center h-screen bg-[url('/assets/33.jpg')] bg-cover bg-center bg-no-repeat text-white px-6">

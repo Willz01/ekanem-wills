@@ -1,14 +1,13 @@
-import { Skills } from "@/components/skills";
 import { Button } from "@/components/ui/button";
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 export const Route = createFileRoute("/experience")({
-  component: RouteComponent,
+  component: Experience,
 });
 
-function RouteComponent() {
+function Experience() {
   useEffect(() => {
     document.title = "Experience";
     document.body.style.overflow = "hidden";
