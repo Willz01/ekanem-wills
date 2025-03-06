@@ -10,7 +10,7 @@ export const Route = createRootRoute({
 function NavBar() {
   return (
     <>
-      <div className="p-2 flex justify-between max-w-2xl m-auto items-baseline sticky top-0 w-full top-0 z-50">
+      <div className="p-2 flex justify-between max-w-2xl m-auto items-baseline fixed top-0 w-full top-0 z-50">
         <div className="p-2 flex gap-2 m-auto">
           <Link to="/" className="[&.active]:font-bold mr-5">
             <Framer />
