@@ -27,7 +27,7 @@ function Experience() {
       />
 
       {/* Main content with adjusted spacing and centered text */}
-      <div className="relative flex flex-col justify-start items-center min-h-screen px-8 py-5">
+      <div className="relative flex flex-col justify-start items-center min-h-screen px-8 py-20">
         <div className="max-w-3xl text-left">
           {/* Publicis Sapient Section */}
           <div>

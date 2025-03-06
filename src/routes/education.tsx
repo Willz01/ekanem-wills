@@ -16,6 +16,9 @@ function RouteComponent() {
     };
   }, []);
 
+  /*  useScrollTop("/about");
+  useScrollEnd("/experience"); */
+
   return (
     <>
       {/* Background with overlay and smooth zoom */}

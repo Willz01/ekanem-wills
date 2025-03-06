@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import "../index.css";
 import { Skills } from "@/components/skills";
 import { AnimatePresence, motion } from "framer-motion";
+import { useScrollEnd } from "@/components/scroller";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -47,6 +48,8 @@ export default function Home() {
       }, 30); // slower and smooth
     }
   }, [showLoader]);
+
+  useScrollEnd("/about");
 
   return (
     <>

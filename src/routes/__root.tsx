@@ -1,8 +1,6 @@
-import { ModeToggle } from "@/components/mode-toggle";
 import { ThemeProvider } from "@/components/theme-provider";
 import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
 import { Framer } from "lucide-react";
-import { useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 export const Route = createRootRoute({
@@ -12,18 +10,21 @@ export const Route = createRootRoute({
 function NavBar() {
   return (
     <>
-      <div className="p-2 flex justify-between max-w-2xl m-auto items-baseline sticky top-0 z-50">
+      <div className="p-2 flex justify-between max-w-2xl m-auto items-baseline sticky top-0 w-full top-0 z-50">
         <div className="p-2 flex gap-2 m-auto">
           <Link to="/" className="[&.active]:font-bold mr-5">
             <Framer />
           </Link>
-          <Link to="/about" className="[&.active]:font-bold text-base">
+          <Link to="/about" className="[&.active]:font-extrabold text-base">
             About
           </Link>
-          <Link to="/education" className="[&.active]:font-bold text-base">
+          <Link to="/education" className="[&.active]:font-extrabold text-base">
             Education
           </Link>
-          <Link to="/experience" className="[&.active]:font-bold text-base">
+          <Link
+            to="/experience"
+            className="[&.active]:font-extrabold text-base"
+          >
             Experience
           </Link>
         </div>
@@ -36,10 +37,6 @@ function NavBar() {
 }
 
 function Root() {
-  useEffect(() => {
-    document.title = "Wills Ekanem";
-  }, []);
-
   return (
     <>
       <AnimatePresence mode="sync">
