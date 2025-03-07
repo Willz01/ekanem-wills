@@ -19,7 +19,7 @@ function About() {
         animate={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
         exit={{ opacity: 0, scale: 0.95, y: -30 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="relative min-h-screen flex flex-col justify-start items-center p-8 bg-[url('/assets/33.jpg')] bg-cover bg-center bg-no-repeat py-20"
+        className="relative min-h-screen flex flex-col justify-start items-center p-8 bg-[url('/assets/33.jpg')] bg-cover bg-center bg-no-repeat py-20 mb-7"
       >
         <motion.div
           className="flex flex-col items-center max-w-3xl w-full"
