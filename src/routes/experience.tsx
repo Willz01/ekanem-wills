@@ -41,7 +41,7 @@ function Experience() {
                 September 2022 - PRESENT
               </code>
             </p>
-            <p className="text-gray-200 mt-4 mb-4">
+            <p className="text-gray-200 text-sm mt-4 mb-4">
               Worked on enhancing and optimizing internal systems for global
               brands. Involved in key projects like Email transaction systems,
               large microservices, and cloud solutions.
