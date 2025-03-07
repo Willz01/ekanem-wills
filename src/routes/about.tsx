@@ -2,20 +2,13 @@ import { createFileRoute } from "@tanstack/react-router";
 import "../index.css";
 import { Skills } from "@/components/skills";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 
 export const Route = createFileRoute("/about")({
   component: About,
 });
 
 function About() {
-  useEffect(() => {
-    document.title = "About";
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = "scroll";
-    };
-  }, []);
+  document.title = "About";
 
   // useScrollEnd("/education");
 

@@ -1,20 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 
 export const Route = createFileRoute("/experience")({
   component: Experience,
 });
 
+const sectionVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1.5, ease: "easeInOut", delay: i * 0.2 },
+  }),
+};
+
 function Experience() {
-  useEffect(() => {
-    document.title = "Experience";
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = "scroll";
-    };
-  }, []);
+  document.title = "Experience";
 
   return (
     <>
@@ -39,7 +41,7 @@ function Experience() {
                 September 2022 - PRESENT
               </code>
             </p>
-            <p className="text-gray-200 mt-4">
+            <p className="text-gray-200 mt-4 mb-4">
               Worked on enhancing and optimizing internal systems for global
               brands. Involved in key projects like Email transaction systems,
               large microservices, and cloud solutions.
@@ -48,52 +50,73 @@ function Experience() {
           </div>
 
           {/* Pandora Section */}
-          <div className="mt-6 ml-4">
+          <motion.div
+            custom={0}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={sectionVariants}
+            className="mt-6 ml-4"
+          >
             <h3 className="text-1xl font-semibold text-gray-200 mt-2">
               [<b>PANDORA</b>] - JUNIOR SOFTWARE ENGINEER
             </h3>
             <p className="text-sm font-semibold text-gray-600">
               Bloomreach Engineer
             </p>
-            <p className="text-md text-muted-foreground mt-1 mb-2">
+            <p className="text-md text-muted-foreground mt-1 mb-4">
               <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
                 September 2022 – July 2023
               </code>
             </p>
             <hr />
-          </div>
+          </motion.div>
 
           {/* ECRF CodeAid Section */}
-          <div className="mt-6 ml-4">
+          <motion.div
+            custom={1}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={sectionVariants}
+            className="mt-6 ml-4"
+          >
             <h3 className="text-1xl font-semibold text-gray-200 mt-2">
               [<b>ECRF</b> CODEAID] - ASSOCIATE SOFTWARE ENGINEER
             </h3>
             <p className="text-sm font-semibold text-gray-600">
               Software Engineer
             </p>
-            <p className="text-md text-muted-foreground mt-1 mb-2">
+            <p className="text-md text-muted-foreground mt-1 mb-4">
               <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
                 September 2023 – August 2024
               </code>
             </p>
             <hr />
-          </div>
+          </motion.div>
 
           {/* NCP National Car Parks Section */}
-          <div className="mt-6 ml-4">
+          <motion.div
+            custom={2}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={sectionVariants}
+            className="mt-6 ml-4"
+          >
             <h3 className="text-1xl font-semibold text-gray-200 mt-2">
               [<b>NCP</b> NATIONAL CAR PARKS] - ASSOCIATE SOFTWARE ENGINEER
             </h3>
             <p className="text-sm font-semibold text-gray-600">
               Backend Engineer
             </p>
-            <p className="text-md text-muted-foreground mt-1 mb-2">
+            <p className="text-md text-muted-foreground mt-1 mb-4">
               <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
                 February 2024 – July 2024
               </code>
             </p>
             <hr />
-          </div>
+          </motion.div>
         </div>
       </div>
 
