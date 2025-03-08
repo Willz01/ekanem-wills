@@ -60,7 +60,7 @@ export default function Home() {
             animate={{ y: 0 }}
             exit={{ y: "-100%" }}
             transition={{ duration: 1.8, ease: "easeInOut" }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-neutral-950 text-white m-2"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-neutral-950 text-white"
           >
             {/* Framer Icon, Large and Centered */}
             <motion.div
